@@ -1,0 +1,9 @@
+*.o
+*.lo
+*.a
+*.la
+*.libs
+./build/.libs
+./build/_libs
+so_locations
+test_bsonobj
