@@ -7,7 +7,7 @@
 
     To build and run:
       g++ -o bsondemo bsondemo.cpp or
-
+      g++ -o bsondemo -I/opt/local/include bsondemo.cpp
       ./bsondemo
 
     Windows: project files are available in this directory for bsondemo.cpp for use with Visual Studio.
