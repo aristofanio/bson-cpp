@@ -34,7 +34,7 @@ namespace Nonce {
         }
 
     private:
-        std::ifstream *_devrandom;
+        //std::ifstream*_devrandom;
         static bool _initialized;
         void init();
 

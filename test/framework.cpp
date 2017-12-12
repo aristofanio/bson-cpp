@@ -18,7 +18,9 @@
 
 #include <boost/program_options.hpp>
 #include <boost/filesystem.hpp>
+#ifdef BOOST_SIGNALS_NO_DEPRECATION_WARNING 
 #include <boost/signals.hpp>
+#endif
 #include <boost/system/error_code.hpp>
 
 #include "framework.h"
