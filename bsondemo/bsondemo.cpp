@@ -6,7 +6,8 @@
     Works headers only (the parts actually exercised herein that is - some functions require .cpp files).
 
     To build and run:
-      g++ -o bsondemo bsondemo.cpp
+      g++ -o bsondemo bsondemo.cpp or
+
       ./bsondemo
 
     Windows: project files are available in this directory for bsondemo.cpp for use with Visual Studio.
@@ -28,7 +29,7 @@
  *    limitations under the License.
  */
 
-#include "../bson.h"
+#include <bson/bson.h>
 #include <iostream>
 #include <vector>
 

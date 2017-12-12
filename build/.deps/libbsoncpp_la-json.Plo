@@ -15,6 +15,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/config/detail/select_stdlib_config.hpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstddef \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stddef.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/__stddef_max_align_t.h \
   /opt/local/include/boost/config/stdlib/libcpp.hpp \
   /opt/local/include/boost/config/detail/select_platform_config.hpp \
   /opt/local/include/boost/config/platform/macos.hpp \
@@ -107,8 +108,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/initializer_list \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstring \
-  /usr/include/string.h /usr/include/sys/_types/_rsize_t.h \
-  /usr/include/sys/_types/_errno_t.h /usr/include/strings.h \
+  /usr/include/string.h /usr/include/strings.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/typeinfo \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdint \
@@ -116,17 +116,11 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__undef_min_max \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iterator \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base_03 \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__debug \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/tuple \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/atomic \
   /opt/local/include/boost/optional/bad_optional_access.hpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stdexcept \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdio \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwchar \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwctype \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cctype \
-  /usr/include/wctype.h /usr/include/_types/_wctrans_t.h \
   /opt/local/include/boost/static_assert.hpp \
   /opt/local/include/boost/throw_exception.hpp \
   /opt/local/include/boost/exception/exception.hpp \
@@ -136,6 +130,8 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/type_traits/conditional.hpp \
   /opt/local/include/boost/type_traits/has_nothrow_constructor.hpp \
   /opt/local/include/boost/type_traits/is_default_constructible.hpp \
+  /opt/local/include/boost/type_traits/detail/yes_no_type.hpp \
+  /opt/local/include/boost/type_traits/type_with_alignment.hpp \
   /opt/local/include/boost/type_traits/is_pod.hpp \
   /opt/local/include/boost/type_traits/is_void.hpp \
   /opt/local/include/boost/type_traits/is_scalar.hpp \
@@ -143,7 +139,6 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/type_traits/is_member_function_pointer.hpp \
   /opt/local/include/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp \
   /opt/local/include/boost/type_traits/remove_cv.hpp \
-  /opt/local/include/boost/type_traits/type_with_alignment.hpp \
   /opt/local/include/boost/type_traits/remove_const.hpp \
   /opt/local/include/boost/type_traits/remove_reference.hpp \
   /opt/local/include/boost/type_traits/decay.hpp \
@@ -161,39 +156,30 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/type_traits/is_same.hpp \
   /opt/local/include/boost/type_traits/is_class.hpp \
   /opt/local/include/boost/type_traits/is_constructible.hpp \
-  /opt/local/include/boost/type_traits/is_convertible.hpp \
+  /opt/local/include/boost/type_traits/is_destructible.hpp \
+  /opt/local/include/boost/type_traits/declval.hpp \
+  /opt/local/include/boost/type_traits/add_rvalue_reference.hpp \
   /opt/local/include/boost/type_traits/is_nothrow_move_assignable.hpp \
   /opt/local/include/boost/type_traits/has_trivial_move_assign.hpp \
   /opt/local/include/boost/type_traits/is_const.hpp \
   /opt/local/include/boost/type_traits/is_volatile.hpp \
   /opt/local/include/boost/type_traits/is_assignable.hpp \
-  /opt/local/include/boost/type_traits/has_trivial_assign.hpp \
   /opt/local/include/boost/type_traits/has_nothrow_assign.hpp \
   /opt/local/include/boost/utility/enable_if.hpp \
-  /opt/local/include/boost/type_traits/declval.hpp \
-  /opt/local/include/boost/type_traits/add_rvalue_reference.hpp \
   /opt/local/include/boost/type_traits/is_nothrow_move_constructible.hpp \
-  /opt/local/include/boost/type_traits/has_trivial_move_constructor.hpp \
-  /opt/local/include/boost/type_traits/has_nothrow_copy.hpp \
-  /opt/local/include/boost/type_traits/is_copy_constructible.hpp \
-  /opt/local/include/boost/type_traits/detail/yes_no_type.hpp \
-  /opt/local/include/boost/type_traits/add_reference.hpp \
-  /opt/local/include/boost/noncopyable.hpp \
-  /opt/local/include/boost/core/noncopyable.hpp \
   /opt/local/include/boost/move/utility.hpp \
   /opt/local/include/boost/move/detail/config_begin.hpp \
   /opt/local/include/boost/move/detail/workaround.hpp \
   /opt/local/include/boost/move/utility_core.hpp \
   /opt/local/include/boost/move/core.hpp \
-  /opt/local/include/boost/move/detail/type_traits.hpp \
+  /opt/local/include/boost/move/detail/config_end.hpp \
   /opt/local/include/boost/move/detail/meta_utils.hpp \
   /opt/local/include/boost/move/detail/meta_utils_core.hpp \
-  /opt/local/include/boost/move/detail/config_end.hpp \
   /opt/local/include/boost/move/traits.hpp \
+  /opt/local/include/boost/move/detail/type_traits.hpp \
   /opt/local/include/boost/none.hpp /opt/local/include/boost/none_t.hpp \
   /opt/local/include/boost/utility/compare_pointees.hpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/functional \
-  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_03 \
   /opt/local/include/boost/optional/optional_fwd.hpp \
   /opt/local/include/boost/optional/detail/optional_config.hpp \
   /opt/local/include/boost/optional/detail/optional_factory_support.hpp \
@@ -290,6 +276,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/mpl/aux_/config/compiler.hpp \
   /opt/local/include/boost/preprocessor/stringize.hpp \
   /opt/local/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
+  /opt/local/include/boost/type_traits/is_convertible.hpp \
   /opt/local/include/boost/type_traits/add_const.hpp \
   /opt/local/include/boost/spirit/home/classic/core/impl/match.ipp \
   /opt/local/include/boost/spirit/home/classic/core/parser.hpp \
@@ -302,7 +289,13 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/ref.hpp /opt/local/include/boost/core/ref.hpp \
   /opt/local/include/boost/spirit/home/classic/core/composite/impl/directives.ipp \
   /opt/local/include/boost/spirit/home/classic/core/scanner/skipper.hpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cctype \
   /opt/local/include/boost/spirit/home/classic/core/primitives/impl/primitives.ipp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwctype \
+  /usr/include/wctype.h /usr/include/_types/_wctrans_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdio \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwchar \
   /opt/local/include/boost/spirit/home/classic/core/scanner/skipper_fwd.hpp \
   /opt/local/include/boost/spirit/home/classic/core/scanner/impl/skipper.ipp \
   /opt/local/include/boost/spirit/home/classic/core/primitives/numerics.hpp \
@@ -311,6 +304,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/compressed_pair.hpp \
   /opt/local/include/boost/detail/compressed_pair.hpp \
   /opt/local/include/boost/type_traits/is_empty.hpp \
+  /opt/local/include/boost/type_traits/add_reference.hpp \
   /opt/local/include/boost/spirit/home/classic/core/primitives/numerics_fwd.hpp \
   /opt/local/include/boost/spirit/home/classic/core/primitives/impl/numerics.ipp \
   /opt/local/include/boost/config/no_tr1/cmath.hpp \
@@ -362,7 +356,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/smart_ptr/detail/sp_convertible.hpp \
   /opt/local/include/boost/smart_ptr/detail/spinlock_pool.hpp \
   /opt/local/include/boost/smart_ptr/detail/spinlock.hpp \
-  /opt/local/include/boost/smart_ptr/detail/spinlock_sync.hpp \
+  /opt/local/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp \
   /opt/local/include/boost/smart_ptr/detail/yield_k.hpp \
   /opt/local/include/boost/predef.h \
   /opt/local/include/boost/predef/language.h \
@@ -515,6 +509,8 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/system/error_code.hpp \
   /opt/local/include/boost/system/config.hpp \
   /opt/local/include/boost/system/api_config.hpp \
+  /opt/local/include/boost/noncopyable.hpp \
+  /opt/local/include/boost/core/noncopyable.hpp \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__locale \
@@ -539,7 +535,8 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /usr/include/sys/_types/_in_addr_t.h \
   /usr/include/sys/_types/_in_port_t.h /usr/include/sys/_types/_ino_t.h \
   /usr/include/sys/_types/_ino64_t.h /usr/include/sys/_types/_key_t.h \
-  /usr/include/sys/_types/_nlink_t.h \
+  /usr/include/sys/_types/_nlink_t.h /usr/include/sys/_types/_rsize_t.h \
+  /usr/include/sys/_types/_errno_t.h \
   /usr/include/sys/_types/_fsblkcnt_t.h \
   /usr/include/sys/_types/_fsfilcnt_t.h /usr/include/_types/_nl_item.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/bitset \
@@ -629,15 +626,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/ratio/ratio_fwd.hpp \
   /opt/local/include/boost/ratio/detail/overflow_helpers.hpp \
   /opt/local/include/boost/type_traits/common_type.hpp \
-  /opt/local/include/boost/type_traits/detail/common_type_impl.hpp \
-  /opt/local/include/boost/type_traits/detail/common_arithmetic_type.hpp \
-  /opt/local/include/boost/type_traits/detail/composite_pointer_type.hpp \
-  /opt/local/include/boost/type_traits/copy_cv.hpp \
-  /opt/local/include/boost/type_traits/add_volatile.hpp \
-  /opt/local/include/boost/type_traits/detail/composite_member_pointer_type.hpp \
-  /opt/local/include/boost/type_traits/remove_pointer.hpp \
-  /opt/local/include/boost/type_traits/type_identity.hpp \
-  /opt/local/include/boost/type_traits/is_union.hpp \
+  /opt/local/include/boost/type_traits/detail/mp_defer.hpp \
   /opt/local/include/boost/type_traits/is_unsigned.hpp \
   /opt/local/include/boost/chrono/detail/is_evenly_divisible_by.hpp \
   /opt/local/include/boost/thread/xtime.hpp \
@@ -665,7 +654,6 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/visit_each.hpp \
   /opt/local/include/boost/core/is_same.hpp \
   /opt/local/include/boost/bind/storage.hpp \
-  /opt/local/include/boost/bind/bind_template.hpp \
   /opt/local/include/boost/bind/bind_cc.hpp \
   /opt/local/include/boost/bind/bind_mf_cc.hpp \
   /opt/local/include/boost/bind/bind_mf2_cc.hpp \
@@ -777,6 +765,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/type_traits/has_plus.hpp \
   /opt/local/include/boost/type_traits/detail/has_binary_operator.hpp \
   /opt/local/include/boost/type_traits/is_fundamental.hpp \
+  /opt/local/include/boost/type_traits/remove_pointer.hpp \
   /opt/local/include/boost/type_traits/has_plus_assign.hpp \
   /opt/local/include/boost/type_traits/has_minus.hpp \
   /opt/local/include/boost/type_traits/has_minus_assign.hpp \
@@ -911,6 +900,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
   /opt/local/include/boost/range/value_type.hpp \
   /opt/local/include/boost/range/detail/misc_concept.hpp \
   /opt/local/include/boost/type_traits/make_unsigned.hpp \
+  /opt/local/include/boost/type_traits/add_volatile.hpp \
   /opt/local/include/boost/range/detail/has_member_size.hpp \
   /opt/local/include/boost/range/distance.hpp \
   /opt/local/include/boost/range/empty.hpp \
@@ -1225,6 +1215,8 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/stddef.h:
 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/8.1.0/include/__stddef_max_align_t.h:
+
 /opt/local/include/boost/config/stdlib/libcpp.hpp:
 
 /opt/local/include/boost/config/detail/select_platform_config.hpp:
@@ -1495,10 +1487,6 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /usr/include/string.h:
 
-/usr/include/sys/_types/_rsize_t.h:
-
-/usr/include/sys/_types/_errno_t.h:
-
 /usr/include/strings.h:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:
@@ -1515,29 +1503,15 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base:
 
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_base_03:
-
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__debug:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/tuple:
 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/atomic:
+
 /opt/local/include/boost/optional/bad_optional_access.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/stdexcept:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdio:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwchar:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwctype:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cctype:
-
-/usr/include/wctype.h:
-
-/usr/include/_types/_wctrans_t.h:
 
 /opt/local/include/boost/static_assert.hpp:
 
@@ -1557,6 +1531,10 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/type_traits/is_default_constructible.hpp:
 
+/opt/local/include/boost/type_traits/detail/yes_no_type.hpp:
+
+/opt/local/include/boost/type_traits/type_with_alignment.hpp:
+
 /opt/local/include/boost/type_traits/is_pod.hpp:
 
 /opt/local/include/boost/type_traits/is_void.hpp:
@@ -1570,8 +1548,6 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 /opt/local/include/boost/type_traits/detail/is_mem_fun_pointer_impl.hpp:
 
 /opt/local/include/boost/type_traits/remove_cv.hpp:
-
-/opt/local/include/boost/type_traits/type_with_alignment.hpp:
 
 /opt/local/include/boost/type_traits/remove_const.hpp:
 
@@ -1607,7 +1583,11 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/type_traits/is_constructible.hpp:
 
-/opt/local/include/boost/type_traits/is_convertible.hpp:
+/opt/local/include/boost/type_traits/is_destructible.hpp:
+
+/opt/local/include/boost/type_traits/declval.hpp:
+
+/opt/local/include/boost/type_traits/add_rvalue_reference.hpp:
 
 /opt/local/include/boost/type_traits/is_nothrow_move_assignable.hpp:
 
@@ -1619,31 +1599,11 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/type_traits/is_assignable.hpp:
 
-/opt/local/include/boost/type_traits/has_trivial_assign.hpp:
-
 /opt/local/include/boost/type_traits/has_nothrow_assign.hpp:
 
 /opt/local/include/boost/utility/enable_if.hpp:
 
-/opt/local/include/boost/type_traits/declval.hpp:
-
-/opt/local/include/boost/type_traits/add_rvalue_reference.hpp:
-
 /opt/local/include/boost/type_traits/is_nothrow_move_constructible.hpp:
-
-/opt/local/include/boost/type_traits/has_trivial_move_constructor.hpp:
-
-/opt/local/include/boost/type_traits/has_nothrow_copy.hpp:
-
-/opt/local/include/boost/type_traits/is_copy_constructible.hpp:
-
-/opt/local/include/boost/type_traits/detail/yes_no_type.hpp:
-
-/opt/local/include/boost/type_traits/add_reference.hpp:
-
-/opt/local/include/boost/noncopyable.hpp:
-
-/opt/local/include/boost/core/noncopyable.hpp:
 
 /opt/local/include/boost/move/utility.hpp:
 
@@ -1655,15 +1615,15 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/move/core.hpp:
 
-/opt/local/include/boost/move/detail/type_traits.hpp:
+/opt/local/include/boost/move/detail/config_end.hpp:
 
 /opt/local/include/boost/move/detail/meta_utils.hpp:
 
 /opt/local/include/boost/move/detail/meta_utils_core.hpp:
 
-/opt/local/include/boost/move/detail/config_end.hpp:
-
 /opt/local/include/boost/move/traits.hpp:
+
+/opt/local/include/boost/move/detail/type_traits.hpp:
 
 /opt/local/include/boost/none.hpp:
 
@@ -1672,8 +1632,6 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 /opt/local/include/boost/utility/compare_pointees.hpp:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/functional:
-
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__functional_03:
 
 /opt/local/include/boost/optional/optional_fwd.hpp:
 
@@ -1867,6 +1825,8 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
 
+/opt/local/include/boost/type_traits/is_convertible.hpp:
+
 /opt/local/include/boost/type_traits/add_const.hpp:
 
 /opt/local/include/boost/spirit/home/classic/core/impl/match.ipp:
@@ -1893,7 +1853,21 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/spirit/home/classic/core/scanner/skipper.hpp:
 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cctype:
+
 /opt/local/include/boost/spirit/home/classic/core/primitives/impl/primitives.ipp:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/_types/_wctrans_t.h:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/string:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdio:
+
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cwchar:
 
 /opt/local/include/boost/spirit/home/classic/core/scanner/skipper_fwd.hpp:
 
@@ -1910,6 +1884,8 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 /opt/local/include/boost/detail/compressed_pair.hpp:
 
 /opt/local/include/boost/type_traits/is_empty.hpp:
+
+/opt/local/include/boost/type_traits/add_reference.hpp:
 
 /opt/local/include/boost/spirit/home/classic/core/primitives/numerics_fwd.hpp:
 
@@ -2019,7 +1995,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/smart_ptr/detail/spinlock.hpp:
 
-/opt/local/include/boost/smart_ptr/detail/spinlock_sync.hpp:
+/opt/local/include/boost/smart_ptr/detail/spinlock_std_atomic.hpp:
 
 /opt/local/include/boost/smart_ptr/detail/yield_k.hpp:
 
@@ -2333,6 +2309,10 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/system/api_config.hpp:
 
+/opt/local/include/boost/noncopyable.hpp:
+
+/opt/local/include/boost/core/noncopyable.hpp:
+
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ostream:
 
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/ios:
@@ -2404,6 +2384,10 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 /usr/include/sys/_types/_key_t.h:
 
 /usr/include/sys/_types/_nlink_t.h:
+
+/usr/include/sys/_types/_rsize_t.h:
+
+/usr/include/sys/_types/_errno_t.h:
 
 /usr/include/sys/_types/_fsblkcnt_t.h:
 
@@ -2587,23 +2571,7 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 
 /opt/local/include/boost/type_traits/common_type.hpp:
 
-/opt/local/include/boost/type_traits/detail/common_type_impl.hpp:
-
-/opt/local/include/boost/type_traits/detail/common_arithmetic_type.hpp:
-
-/opt/local/include/boost/type_traits/detail/composite_pointer_type.hpp:
-
-/opt/local/include/boost/type_traits/copy_cv.hpp:
-
-/opt/local/include/boost/type_traits/add_volatile.hpp:
-
-/opt/local/include/boost/type_traits/detail/composite_member_pointer_type.hpp:
-
-/opt/local/include/boost/type_traits/remove_pointer.hpp:
-
-/opt/local/include/boost/type_traits/type_identity.hpp:
-
-/opt/local/include/boost/type_traits/is_union.hpp:
+/opt/local/include/boost/type_traits/detail/mp_defer.hpp:
 
 /opt/local/include/boost/type_traits/is_unsigned.hpp:
 
@@ -2658,8 +2626,6 @@ libbsoncpp_la-json.lo: src/util/json.cpp \
 /opt/local/include/boost/core/is_same.hpp:
 
 /opt/local/include/boost/bind/storage.hpp:
-
-/opt/local/include/boost/bind/bind_template.hpp:
 
 /opt/local/include/boost/bind/bind_cc.hpp:
 
@@ -2886,6 +2852,8 @@ src/bsonassert.h:
 /opt/local/include/boost/type_traits/detail/has_binary_operator.hpp:
 
 /opt/local/include/boost/type_traits/is_fundamental.hpp:
+
+/opt/local/include/boost/type_traits/remove_pointer.hpp:
 
 /opt/local/include/boost/type_traits/has_plus_assign.hpp:
 
@@ -3176,6 +3144,8 @@ src/util/time_support.h:
 /opt/local/include/boost/range/detail/misc_concept.hpp:
 
 /opt/local/include/boost/type_traits/make_unsigned.hpp:
+
+/opt/local/include/boost/type_traits/add_volatile.hpp:
 
 /opt/local/include/boost/range/detail/has_member_size.hpp:
 
